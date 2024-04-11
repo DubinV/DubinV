@@ -1,0 +1,6 @@
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+// This is a comment
+
