@@ -1,0 +1,17 @@
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const isEven = num => num % 2 === 0;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+76 - 18,94,50,47,34,83,94,63,36,28,29,36,24,61,89,45,93,23,80,67,6,76,58,37,99,33,36,51,15,96,2,45,57,50,97,69,7,96,49,72,54,43,85,12,37,21
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+98 - 69
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
